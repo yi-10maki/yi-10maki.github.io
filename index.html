@@ -15,7 +15,7 @@
   See the License for the specific language governing permissions and
   limitations under the License
 -->
-<html lang="en">
+<html lang="jp">
 
 <head>
     <meta charset="utf-8">
@@ -26,176 +26,81 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
     <link rel="stylesheet" href="styles.css" />
-
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Simple portfolio website</span>
-                </span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                </nav>
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">Yusuke's portfolio</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation. We hide it in small screens. -->
+              <!--
+              <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+              </nav>
+              -->
             </div>
         </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            </nav>
-        </div>
         <main class="mdl-layout__content">
             <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work01.jpg" border="0" alt="">
-                    </div>
+
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Blog template</h2>
+                        <h2 class="mdl-card__title-text">About</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                        <strong>Includes</strong>
+                        <span>NLP, Deep Learning, Game Development, Unity</span>
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">自己紹介</h3>
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                池田祐介<br>
+                                大阪公立大学大学院　情報学研究科　修士1年<br>
+                                創発ソフトウェア研究室所属
+                            </p>
+                            <p>
+                                大学では自然言語処理の分野で日本語小論文の自動採点について研究していました．大学院でも研究を継続しつつ，新しい研究テーマを模索中です．
+                            </p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--2-col"></div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <img class="profile-image" src=" images/my_icon.jpg" border="3" alt="">
+                        </div>
+
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">制作物</h3>
+
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                <a href="https://github.com/yi-10maki">[3D Action] Ruins (音量注意)</a>
+                            </p>
+                        </div>
+                        
+                        
                     </div>
+                    <div class="mdl-grid portfolio-copy">
+                        <div class="mdl-cell mdl-cell--1-col mdl--social-btn" style="text-align:center;">
+                            <a href="https://github.com/yi-10maki" style="color:black;" target="_blank" rel="noopener noreferrer"><img class="github-image" src=" images/github.svg" border="0" alt=""></a>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work07.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Sunt nulla</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work02.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Android.com website</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work03.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Dashboard template</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work04.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Text-heavy website</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work08.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Ex officia laborum</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work05.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Stand-alone article</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work06.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">MDL website</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-work09.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Consequat ut quis</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-                    </div>
-                </div>
+
+
             </div>
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Simple portfolio website</div>
+                    <div class="mdl-logo">Yusuke's portfolio</div>
                 </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
+
             </footer>
         </main>
     </div>
