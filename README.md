@@ -1,2 +1,2 @@
 # yi-10maki.github.io
-[リンク](https://yi-10maki.github.io/)
+[ポーチフォリオへのリンク](https://yi-10maki.github.io/)
