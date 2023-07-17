@@ -1,2 +1,4 @@
-# yi-10maki.github.io
-[ポートフォリオへのリンク](https://yi-10maki.github.io/)
+# Portfolio
+以下のリンクからポートフォリオサイトにアクセスできます．
+
+[ポートフォリオ](https://yi-10maki.github.io/)
