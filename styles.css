@@ -278,3 +278,8 @@ html, body {
   border: 2px solid #157e13; /* 枠線を付加 */
 }
 
+.mono-image {
+  text-align: center;
+  margin:0 auto;
+  width:  750px;
+}
