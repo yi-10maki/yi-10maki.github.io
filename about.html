@@ -16,93 +16,112 @@
   limitations under the License
 -->
 <html lang="jp">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>MDL-Static Website</title>
+    <title>Yusuke's Portfolio</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-
-<body>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Simple portfolio website</span>
-                </span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                    <a class="mdl-navigation__link is-active" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            </nav>
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--light-green-800">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h4>Yusuke's Portfolio</h4>
         </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
-
-                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">About</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/about-header.jpg" border="0" alt="">
-                    </div>
-
-                    <div class="mdl-grid portfolio-copy">
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">自己紹介</h3>
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                自己紹介
-                            </p>
-                        </div>
-
-
-
-
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">制作物</h3>
-
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                作品
-                            </p>
-                        </div>
-                    </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--grey-900">
+          <a href="index.html" class="mdl-layout__tab">Overview</a>
+          <a href="#about" class="mdl-layout__tab is-active">About</a>
+          <a href="development.html" class="mdl-layout__tab">Development</a>
+          <a href="music.html" class="mdl-layout__tab">Music</a>
+          <a href="illustration.html" class="mdl-layout__tab">Illustration</a>
+        </div>
+      </header>
+      
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="about">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">自己紹介</h4>
+                <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <p>
+                    池田祐介<br>
+                    大阪公立大学大学院　情報学研究科　修士1年<br>
+                    創発ソフトウェア研究室所属
+                  </p>
+                  <p>
+                    大学では自然言語処理の分野で日本語小論文の自動採点について研究していました．大学院でも研究を継続しつつ，新しい研究テーマを模索中です．
+                  </p>
                 </div>
-
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                </div>
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-phone">
+                  <img class="profile-image" src=" images/my_icon.jpg" border="3" alt="">
+                </div>
+              </div>
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">制作物一覧</h4>
+                <ul>
+                  <li>[2D Action][個人制作] <a href="https://yi-10maki.github.io/hop_step_jump_web/" target="_blank">HOP STEP JUMP</a> (WebGL)</li>
+                  <li>[3D Action][共同制作] <a href="https://yi-10maki.github.io/3d_action_web">Ruins</a> (WebGL)</li>
+                  <li>[2D Action][共同制作] <a href="https://youtu.be/AvMEUBocgpI" target="_blank">Mono</a> (Movie)</li>
+                  <li>[Tool][共同制作] <a href="https://github.com/yi-10maki/map_editor" target="_blank">MapTipEditor</a> (GitHub)</li>
+                </ul>
+              </div>
+              <div class="mdl-cell mdl-cell--12-col mdl--social-btn" style="text-align:center;">
+                <a href="https://github.com/yi-10maki" style="color:black;" target="_blank" rel="noopener noreferrer"><img class="github-image" src="images/github.svg" border="0" alt=""></a>
+              </div>
 
             </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Simple portfolio website</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
-    </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
+          </section>
+        </div>
 
+        <footer class="mdl-mini-footer mdl-color--grey-900">
+          <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">Yusuke's portfolio</div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a href="https://github.com/yi-10maki/yi-10maki.github.io" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-green-800 mdl-color-text--accent-contrast">View Source</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
 </html>

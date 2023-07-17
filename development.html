@@ -1,0 +1,152 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Yusuke's Portfolio</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--light-green-800">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h4>Yusuke's Portfolio</h4>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--grey-900">
+          <a href="index.html" class="mdl-layout__tab">Overview</a>
+          <a href="about.html" class="mdl-layout__tab">About</a>
+          <a href="#development" class="mdl-layout__tab is-active">Development</a>
+          <a href="music.html" class="mdl-layout__tab">Music</a>
+          <a href="illustration.html" class="mdl-layout__tab">Illustration</a>
+        </div>
+      </header>
+      
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="development">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Mono</h4>
+                <img class="mono_1-image" src="images/mono_1.png" border="0" alt="">
+                <p>
+                  ジャンル: 探索型2Dアクション<br>
+                  制作期間: 2年3か月<br>
+                  制作人数: 7名<br>
+                  チームでの自身の役割: ディレクター・プランナー・プログラマー・デザイナー・サウンドクリエイター<br>
+                  概要: 別世界の友人を助けるために派遣されたAIを操作し、世界を探索しながらボスを倒していくゲームです。<br>
+                       アセットを極力使わない長期間のゲーム制作に挑戦した作品で、デザイン・アニメーション・BGM・SEなども全て自分たちで制作しています。<br>
+                </p>
+                <p class="mdl-cell mdl-cell--12-col"><a href="https://youtu.be/AvMEUBocgpI" target="_blank">Mono</a> (Movie)</p>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Ruins</h4>
+                <img class="ruins_1-image" src="images/ruins_1.png" border="0" alt="">
+                <p>
+                  ジャンル: 3Dアクション<br>
+                  制作期間: 1ヶ月 + 3日<br>
+                  制作人数: 4名<br>
+                  チームでの自身の役割: プランナー・プログラマー<br>
+                  概要: エネルギーが枯渇する前に必要なアイテムを集め、廃墟からの脱出を目指す3Dアクションゲームです。<br>
+                </p>
+                <p class="mdl-cell mdl-cell--12-col"><a href="https://yi-10maki.github.io/3d_action_web">Ruins</a> (WebGL)</p>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">HOP STEP JUMP</h4>
+                <p>
+                  ジャンル: 2Dアクション<br>
+                  制作期間: 2週間<br>
+                  制作人数: 1名<br>
+                  概要: 常に跳ね続けるプレイヤーキャラクターを操作してゴールを目指す2Dアクションゲームです。<br>
+                </p>
+                <p class="mdl-cell mdl-cell--12-col"><a href="https://yi-10maki.github.io/hop_step_jump_web/" target="_blank">HOP STEP JUMP</a> (WebGL)</p>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">MapTipEditor</h4>
+                <p>
+                  ジャンル: マップ制作補助ツール<br>
+                  制作期間: 4ヶ月<br>
+                  制作人数: 3名<br>
+                  概要: 上記の「Mono」でマップ制作を楽にするために作成したツールになります。React+Typescriptを使用しています。<br>
+                </p>
+                <p class="mdl-cell mdl-cell--12-col"> <a href="https://github.com/yi-10maki/map_editor" target="_blank">MapTipEditor</a> (GitHub)</p>
+            </div>
+          </section>
+        </div>
+
+        <footer class="mdl-mini-footer mdl-color--grey-900">
+          <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">Yusuke's portfolio</div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a href="https://github.com/yi-10maki/yi-10maki.github.io" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-green-800 mdl-color-text--accent-contrast">View Source</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
