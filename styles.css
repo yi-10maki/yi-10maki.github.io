@@ -283,3 +283,7 @@ html, body {
   margin:0 auto;
   width:  750px;
 }
+
+.movie {
+  margin-bottom: 5px;
+}
