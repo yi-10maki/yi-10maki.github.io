@@ -293,8 +293,11 @@ html, body {
   margin-top: 10px;
 }
 
-
 .text-margin {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.caution {
+  color: red;
 }
