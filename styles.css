@@ -290,15 +290,11 @@ html, body {
 }
 
 .music {
-  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 
 .text-margin {
   margin-top: 10px;
   margin-bottom: 30px;
-}
-
-.h5-margin {
-  margin-bottom: 10px;
 }
