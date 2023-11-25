@@ -298,6 +298,11 @@ html, body {
   margin-bottom: 30px;
 }
 
+.text-margin-sp {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .caution {
   color: red;
   border: 3px solid #5f5f5f; /* 枠線を付加 */
