@@ -300,4 +300,5 @@ html, body {
 
 .caution {
   color: red;
+  border: 3px solid #5f5f5f; /* 枠線を付加 */
 }
