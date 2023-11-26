@@ -298,8 +298,13 @@ html, body {
   margin-bottom: 30px;
 }
 
+.text-margin-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .text-margin-sp {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .caution {
